@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+/* Common style ends */
+
+/* Home Style starts */
+
+header {
+    width: 100%;
+    height: 13%;
+   
+    position: fixed;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    height: 60px;
+}
+
+header .container .logo img{
+    height: 270%;
+    margin-top: -25%;
+    margin-left: -40%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 530;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(128, 128, 24);
+}
+
+.banner{
+    width: 100vh;
+    width: 100%;
+    height: 500%;
+    background-image: url(images/icons/cover\ 1.png);
+    background-size: 77%;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: rgb(128, 128, 24);
+    width: 50%;
+    line-height: 4.5rem;
+    font-weight: 500;
+}
+
+.banner h1 span{
+    color: #5d1c3e;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p{
+    color: rgb(1, 0, 0);
+    width: 50%;
+    text-shadow: 0 0 2px rgb(227, 192, 192);
+    margin-top: 10px;
+}
+
+.banner button {
+    background-color: #5d1c3e;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images .girl{
+    image-resolution: 3100%;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
